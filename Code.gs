@@ -12,7 +12,7 @@ function checkForChange() {
   //The string to search for
   var find = 'S3';
   
-  var url = 'https://ktu.edu.in/eu/core/announcements.htm';
+  var url = 'https://github.com/';
   var html = UrlFetchApp.fetch(url).getContentText();
  
   html = html.substring(0,15000);
