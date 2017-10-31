@@ -12,7 +12,7 @@ function checkForChange() {
   //The string to search for
   var find = 'S3';
   
-  var url = 'https://ktu.edu.in/eu/core/announcements.htm';
+  var url = 'https://docs.google.com/presentation/d/1_7tNTvT_mQV8QIkmYWZjZr_ntETZ5PkiL6CNNSHnxrc/edit#slide=id.g283320ab9a_0_22';
   var html = UrlFetchApp.fetch(url).getContentText();
  
   html = html.substring(0,15000);
@@ -32,12 +32,12 @@ function checkForChange() {
     
     if(cell.getValue() == ''){
       cell.setValue(text);
-      MailApp.sendEmail('biswasb007@gmail.com', 'ktu alert', 'New change for '+find+'\n'+text)
+      MailApp.sendEmail('sravanchandran248@gmail.com', 'ktu alert', 'New change for '+find+'\n'+text)
     }
     
     else if(cell.getValue() != text){
       cell.setValue(text);
-      MailApp.sendEmail('biswasb007@gmail.com', 'ktu alert', 'New change for '+find+'\n'+text)
+      MailApp.sendEmail('sravanchandran248@gmail.com', 'ktu alert', 'New change for '+find+'\n'+text)
     }
   }
   
